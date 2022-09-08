@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\TrollController;
+use App\Http\Controllers\CatatanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +19,16 @@ use App\Http\Controllers\TrollController;
 Route::get('/', function () {
     return view('welcome');
 });
+// CATATAN BRO
+Route::get('/catatan', [CatatanController::class, 'index']);
 
+Route::get('/create-catatan', [CatatanController::class, 'create']);
+Route::post('/save-catatan', [CatatanController::class, 'store'])->name('simpan-catatan');
+
+Route::get('/edit-catatan/{id}', [CatatanController::class, 'edit']);
+Route::put('update-catatan/{id}', [CatatanController::class, 'update'])->name('update-catatan');
+
+Route::get('/delete-catatan/{id}', [CatatanController::class, 'destroy']);
 
 // ?LOGIN//
 
