@@ -16,7 +16,7 @@
             src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
             crossorigin="anonymous"></script>
     </head>
-    <body style="background-color:#9b522b ">
+    <body style="background-image: linear-gradient(to right,#2193b0,#d9f5ff)">
         {{-- background-image: linear-gradient(to right,#3E5151,#DECBA4) --}}
         <div id="layoutAuthentication">
             <div id="layoutAuthentication_content">
@@ -35,10 +35,11 @@
                                     </div>
                                     @endif
                                     
-                                    <div class="card-header" style="background-color: #3E5151">
-                                        <h3 class="text-center text-white font-weight-bold my-4">Login</h3>
+                                    <div class="card-header" style="background-color:">
+                                        <h3 class="text-center  font-weight-bold my-4">Login</h3>
                                     </div>
-                                    <div class="card-body " style="background-image: linear-gradient(to bottom,#3E5151,#DECBA4)">
+                                    <div class="card-body ">
+                                        {{-- style="background-image: linear-gradient(to bottom,#3E5151,#DECBA4)" --}}
                                         <form action="{{url('proses_login')}}" method="POST" id="logForm">
                                             {{ csrf_field() }}
                                             <div class="form-group">
@@ -54,25 +55,25 @@
                                                         </button>
                                                     </div>
                                                     @enderror
-                                                <label class="small mb-1 text-white" for="inputEmailAddress">Username</label>
+                                                <label class="small mb-1" for="inputEmailAddress">NIK</label>
                                                 <input
                                                     class="form-control py-4"
                                                     id="inputEmailAddress"
                                                     name="username"
                                                     type="text"
-                                                    placeholder="Masukkan Username"/>
+                                                    placeholder="Masukkan NIK"/>
                                                 @if($errors->has('username'))
                                                 <span class="error">{{ $errors->first('username') }}</span>
                                                 @endif
                                             </div>
                                             <div class="form-group">
-                                                <label class="small mb-1 text-white" for="inputPassword">Password</label>
+                                                <label class="small mb-1 " for="inputPassword">Nama Lengkap</label>
                                                 <input
                                                     class="form-control py-4"
                                                     id="inputPassword"
-                                                    type="password"
+                                                    type="text"
                                                     name="password"
-                                                    placeholder="Masukkan Password"/>
+                                                    placeholder="Masukkan Nama Lengkap"/>
                                                 @if($errors->has('password'))
                                                 <span class="error">{{ $errors->first('password') }}</span>
                                                 @endif
@@ -80,7 +81,7 @@
                                             <div class="form-group">
                                                 <div class="custom-control custom-checkbox">
                                                     <input class="custom-control-input" id="rememberPasswordCheck" type="checkbox"/>
-                                                    <label class="custom-control-label text-white" for="rememberPasswordCheck">Remember password</label>
+                                                    <label class="custom-control-label " for="rememberPasswordCheck">Remember</label>
                                                 </div>
                                             </div>
                                             <div
@@ -90,7 +91,7 @@
                                             </div>
                                         </form>
                                     </div>
-                                    <div class="card-footer text-center " style="background-color: #DECBA4">
+                                    <div class="card-footer text-center " style="background-color:">
                                         <div class="small">
                                             {{-- <a href="{{url('register')}}">Belum Punya Akun? Daftar!</a> --}}
                                         </div>

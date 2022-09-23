@@ -23,7 +23,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <div class="wrapper">
 
         <!-- Navbar -->
-        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="background-color: #d9f5ff">
             <!-- Left navbar links -->
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -46,7 +46,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->
-        <aside class="main-sidebar elevation-4" style="background-image: linear-gradient(to top,#2980B9,#6DD5FA,#FFFFFF);">
+        <aside class="main-sidebar elevation-4" style="background-image: linear-gradient(to top,#2193b0,#d9f5ff);">
             <a href="" class="brand-link"> 
                 <img src="https://play-lh.googleusercontent.com/8ihjhDymV5YuCYebEOyu3nXnuH9Ce3YZfWcI86DPA_KjRkKTyauoPCgqS7tfAkbPqR9X" alt="Peduli Diri Logo" class="brand-image elevation-3"> 
                 <span class="brand-text font-weight-light" style="color: black;">Peduli Diri</span> 
@@ -122,8 +122,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </aside>
         <!-- /.control-sidebar -->
 
-        {{-- <!-- Main Footer -->
-  <footer class="main-footer">
+        <!-- Main Footer -->
+  <footer class="main-footer" style="background-color: #2193b0">
     <!-- To the right -->
     <div class="float-right d-none d-sm-inline">
       Anything you want
@@ -132,7 +132,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
   </footer>
 </div>
-<!-- ./wrapper --> --}}
+<!-- ./wrapper -->
 
         <!-- REQUIRED SCRIPTS -->
 
