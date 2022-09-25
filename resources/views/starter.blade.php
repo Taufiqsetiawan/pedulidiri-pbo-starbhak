@@ -48,7 +48,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar elevation-4" style="background-image: linear-gradient(to top,#2193b0,#d9f5ff);">
             <a href="" class="brand-link"> 
-                <img src="https://play-lh.googleusercontent.com/8ihjhDymV5YuCYebEOyu3nXnuH9Ce3YZfWcI86DPA_KjRkKTyauoPCgqS7tfAkbPqR9X" alt="Peduli Diri Logo" class="brand-image elevation-3"> 
+                <img src="https://play-lh.googleusercontent.com/8ihjhDymV5YuCYebEOyu3nXnuH9Ce3YZfWcI86DPA_KjRkKTyauoPCgqS7tfAkbPqR9X" alt="Peduli Diri Logo" class="brand-image elevation-3">
+                   <h3 style="color:#0093c4">Peduli diri</h3>
                 <span class="brand-text font-weight-light" style="color: black;">{{ Auth::user()->name }}</span> 
               </a> 
            

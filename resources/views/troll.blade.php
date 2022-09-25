@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-   <marquee behavior="" direction=""><img src="https://qph.cf2.quoracdn.net/main-qimg-bf79b17b86dc15033279db289ff50329-lq" width="1500" alt=""></marquee>
+   <marquee behavior="" direction=""><img src="fotozaky.jpg" width="1000" height="700" alt=""></marquee>
 </body>
 </html>
