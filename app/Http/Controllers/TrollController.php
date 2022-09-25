@@ -8,6 +8,6 @@ class TrollController extends Controller
 {
     public function index()
     {
-        return view('troll');
+        return view('dashboard');
     }
 }

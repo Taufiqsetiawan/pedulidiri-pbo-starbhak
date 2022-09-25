@@ -18,17 +18,17 @@ class AkunSeeder extends Seeder
         $user =  [
             [
                 'username' => '001',
-                'name' => 'Ini adalah wawan',
+                'name' => 'Taufiq Setiawan',
                 'email' => 'wawan@example.com',
                 'level' => 'admin',
                 'password' => bcrypt('wawan')
             ],
             [
                 'username' => '002',
-                'name' => 'Ini adalah udin',
-                'email' => 'udin@example.com',
+                'name' => 'Muhammad Rizki',
+                'email' => 'rizki@example.com',
                 'level' => 'user',
-                'password' => bcrypt('udin') 
+                'password' => bcrypt('rizki') 
             ]
             ];
             foreach ($user as $key => $value) {

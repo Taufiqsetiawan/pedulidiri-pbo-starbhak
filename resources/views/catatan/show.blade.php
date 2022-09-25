@@ -22,7 +22,7 @@
                             <tr>
                                 <th scope="col">#</th>
                                 <th scope="col">Nama</th>
-                                <th scope="col">Tanggal</th>
+                                <th scope="col">Tanggal Lahir</th>
                                 <th scope="col">Waktu</th>
                                 <th scope="col">Lokasi</th>
                                 <th scope="col">Suhu Tubuh</th>
@@ -42,6 +42,9 @@
                                     <a href="{{ url('/edit-catatan',$item->id) }}" class="btn btn-warning">Edit</a>
                                     <a href="{{ url('/delete-catatan',$item->id) }}" class="btn btn-danger">Hapus</a>
                                 </td>
+                            </tr>
+                            <tr>
+                                <td colspan="7"><center>{{ $item->created_at->diffForHumans ()}}</center></td>
                             </tr>
                             @endforeach
                         </tbody>

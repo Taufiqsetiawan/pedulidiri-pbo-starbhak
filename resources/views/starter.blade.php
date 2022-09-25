@@ -30,7 +30,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href=" " class="nav-link">Catatan Perjalanan</a>
+                    <a href="{{ url('catatan') }}" class="nav-link">Catatan Perjalanan</a>
                 </li>
             </ul>
 
@@ -49,7 +49,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <aside class="main-sidebar elevation-4" style="background-image: linear-gradient(to top,#2193b0,#d9f5ff);">
             <a href="" class="brand-link"> 
                 <img src="https://play-lh.googleusercontent.com/8ihjhDymV5YuCYebEOyu3nXnuH9Ce3YZfWcI86DPA_KjRkKTyauoPCgqS7tfAkbPqR9X" alt="Peduli Diri Logo" class="brand-image elevation-3"> 
-                <span class="brand-text font-weight-light" style="color: black;">Peduli Diri</span> 
+                <span class="brand-text font-weight-light" style="color: black;">{{ Auth::user()->name }}</span> 
               </a> 
            
             

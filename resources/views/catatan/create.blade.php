@@ -17,7 +17,7 @@
                               @enderror
                             </div>
                             <div class="mb-3">
-                              <label for="exampleInputEmail1" class="form-label">Tanggal</label>
+                              <label for="exampleInputEmail1" class="form-label">Tanggal Lahir</label>
                               <input type="date" name="tanggal" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                               @error('tanggal')
                                 <div class="text-warning">{{ $message }}</div>

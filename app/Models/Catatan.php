@@ -19,4 +19,5 @@ class Catatan extends Model
         'lokasi',
         'suhu_tubuh'
     ];
+    protected $dates =['created_at'];
 }

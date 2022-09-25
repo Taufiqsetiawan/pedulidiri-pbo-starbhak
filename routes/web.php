@@ -17,7 +17,7 @@ use App\Http\Controllers\CatatanController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('login');
 });
 // CATATAN BRO
 Route::get('/catatan', [CatatanController::class, 'index']);
@@ -38,10 +38,10 @@ Route::get('logout',[AuthController::class,'logout'])->name('logout');
 
 Route::group(['middleware' => ['auth']], function() {
     Route::group(['middleware' => ['Cek_login:admin']], function() {
-        Route::get('admin',[CatatanController::class,'index'])->name('admin');
+        Route::get('admin',[TrollController::class,'index'])->name('admin');
     });
     Route::group(['middleware' => ['Cek_login:user']], function() {
-        Route::get('user',[CatatanController::class,'index'])->name('user');
+        Route::get('user',[TrollController::class,'index'])->name('user');
     });
 
 });
